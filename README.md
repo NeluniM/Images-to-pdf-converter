@@ -1,111 +1,111 @@
-# 🖼️📄 **Image to PDF Converter**
+# 🖼️📄 **Image to PDF Converter**  
 
-Turn your **images** (PNG, JPG, JPEG) into **high-quality PDFs** effortlessly! This **Python-powered tool** features an intuitive **Tkinter GUI** and leverages `Pillow` & `ReportLab` for exceptional results.  
-
----
-
-## **✨ Key Features**
-
-### 📸 **Select Images with Ease**  
-- Choose multiple images using a simple file dialog.  
-
-### 🖼️ **Preview Your Selection**  
-- See the selected images listed before conversion.  
-
-### ✍️ **Custom PDF Names**  
-- Personalize your PDF filename to your liking.  
-
-### 📏 **Smart Image Resizing**  
-- Adjusts images to A4 size while preserving aspect ratio.  
-
-### 🎨 **Clean, User-Friendly GUI**  
-- Intuitive buttons and fields for a seamless experience.  
-
-### ⚠️ **Error Alerts**  
-- Get notified about unsupported formats, invalid inputs, and more.  
-
-### 🖨️ **Professional-Quality PDFs**  
-- Outputs sharp, high-quality PDFs.  
+Effortlessly convert your **images** (PNG, JPG, JPEG) into **high-quality PDFs**! This powerful **Python tool** features a sleek **Tkinter GUI**, combining the capabilities of `Pillow` and `ReportLab` for outstanding results.  
 
 ---
 
-## **🛠️ Prerequisites**
+## **✨ Highlights**  
 
-Ensure the following libraries are installed:
+### 📸 **Easy Image Selection**  
+- Pick multiple images with a simple file dialog.  
 
-- **`Pillow`** 🖼️: For image handling.  
-- **`ReportLab`** 📄: For PDF generation.  
-- **`Tkinter`** 🎨: Pre-installed with Python.  
+### 🖼️ **Preview Your Choices**  
+- View the selected images in a clear list.  
 
-Install missing packages with:  
-```bash
-pip install pillow reportlab
-```
+### ✍️ **Customizable PDF Names**  
+- Set your preferred PDF filename with ease.  
+
+### 📏 **Smart Resizing**  
+- Automatically fits images to A4 size while maintaining aspect ratio.  
+
+### 🎨 **User-Friendly Interface**  
+- Clean, intuitive design for smooth navigation.  
+
+### ⚠️ **Error Handling**  
+- Alerts for unsupported formats, invalid inputs, and other issues.  
+
+### 🖨️ **High-Quality Output**  
+- Produces professional-grade PDFs every time.  
 
 ---
 
-## **🚀 Quick Start**
+## **🛠️ What You’ll Need**  
 
-### 1️⃣ **Download the Tool**  
-Clone the repository or download the files.  
+Make sure the following libraries are installed:  
 
-### 2️⃣ **Run the App**  
-Open a terminal or IDE and execute:  
-```bash
-python main.py
+- **`Pillow`** 🖼️: For image processing.  
+- **`ReportLab`** 📄: For creating PDFs.  
+- **`Tkinter`** 🎨: Built into Python for GUI development.  
+
+Install missing dependencies with:  
+```bash  
+pip install pillow reportlab  
 ```  
 
-### 3️⃣ **Convert Images to PDF**  
-- **Select Images**: Click **Select Images** to choose files.  
-- **Name Your PDF**: Enter a custom name.  
-- **Generate PDF**: Click **Convert to PDF** to save your file.  
+---
+
+## **🚀 Getting Started**  
+
+### 1️⃣ **Get the Tool**  
+Download or clone the repository.  
+
+### 2️⃣ **Launch the App**  
+Run the script from your terminal or IDE:  
+```bash  
+python main.py  
+```  
+
+### 3️⃣ **Create Your PDF**  
+- **Select Images**: Click **Select Images** and choose files.  
+- **Name Your PDF**: Enter a custom filename.  
+- **Generate PDF**: Click **Convert to PDF** to save the file.  
 
 ---
 
-## **📦 Project Layout**  
+## **📦 Project Structure**  
 
-```plaintext
-ImageToPDFConverter/
-├── main.py            # Core script
-├── README.md          # Documentation
-└── requirements.txt   # Dependencies
-```
+```plaintext  
+ImageToPDFConverter/  
+├── main.py            # Main script  
+├── README.md          # Documentation  
+└── requirements.txt   # Dependencies list  
+```  
 
 ---
 
-## **⚙️ Customization Options**
+## **⚙️ Customization Options**  
 
-### ✏️ **Change PDF Dimensions**  
+### ✏️ **Modify PDF Dimensions**  
 Adjust the page size in the `convert_images_to_pdf` function:  
-```python
-pdf = canvas.Canvas(output_pdf_path, pagesize=(595.28, 841.89))  # A4 size
+```python  
+pdf = canvas.Canvas(output_pdf_path, pagesize=(595.28, 841.89))  # A4 dimensions  
 ```  
-- **Letter size**: Replace with `(612, 792)`.  
-- **Custom size**: Use `(width, height)` in points.  
+- **For Letter size**: Use `(612, 792)`.  
+- **Custom size**: Replace with `(width, height)` in points.  
 
-### 🎨 **Enhance the GUI**  
-- Add themes using `ttkbootstrap`.  
-- Enable drag-and-drop for easier image selection.  
-
----
-
-## **🚧 Known Issues**
-
-1. **Special Characters**: Filenames with unusual characters may cause errors.  
-2. **Dependencies**: Ensure required libraries are installed.  
+### 🎨 **Upgrade the Interface**  
+- Add themes with `ttkbootstrap`.  
+- Enable drag-and-drop functionality for selecting images.  
 
 ---
 
-## **💡 Future Upgrades**  
+## **🚧 Current Limitations**  
 
-- ⏳ **Progress Bar**: Indicate conversion progress for large image batches.  
-- 🔒 **PDF Security**: Add password protection.  
-- 🎨 **Image Editing**: Rotate, crop, or filter images before saving.  
-- 🌍 **Localization**: Add multi-language support.  
-- ☁️ **Cloud Integration**: Save PDFs to Google Drive or Dropbox.  
+1. **Special Characters**: Filenames with unusual symbols might cause errors.  
+2. **Dependencies**: Ensure required libraries are properly installed.  
+
+---
+
+## **💡 What’s Coming Next?**  
+
+- ⏳ **Progress Indicators**: Show conversion progress for larger batches.  
+- 🔒 **PDF Security**: Include password-protection features.  
+- 🎨 **Image Editing Tools**: Enable rotation, cropping, or filters before conversion.  
+- 🌍 **Multi-Language Support**: Offer localized interfaces.  
+- ☁️ **Cloud Integration**: Save PDFs directly to Google Drive or Dropbox.  
 
 ---
 
 ## **📜 License**  
 
-Released under the **MIT License**—feel free to use, modify, and distribute! 🎉  
+Released under the **MIT License**—use, modify, and share freely! 🎉  
